@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+</aiml>
+<category>
+ <pattern> Hi </pattern>
+ <template>Hello, I am your Bot.Tell me your name please
+ We are talking in different language. 
+ Please writ
+ <delay></delay>
+ " My name is "
+ </template>
+</category>
+<category> <pattern>My name is *</pattern>
+ <template>
+ Hi! <think><set name = "username"> <star/></set></think>
+ What do you want to talk about?
+ </template>
+ </category>
+ <category>
+ <pattern>Bye</pattern>
+ <template>
+ Bye <get name = "username"/>. Thanks for the conversation!
+ </template> 
+ </category> 
+<category>
+ <pattern> LOVE </pattern> 
+ <template>
+ <random>
+ <li> Love is very essential in life. </li>
+ <li>Love is a set of emotions. </li>
+ <li> Love involves care and trust. </li>
+ <li> Love requires money. </li>
+ </random>
+ </template>
+</category>
+
+
+<category>
+    <pattern>Hi there</pattern>
+    <template>
+        Hello there! I'm your Bot. How can I assist you today?
+    </template>
+</category>
+
+<category>
+    <pattern>What is your name?</pattern>
+    <template>
+        My name is Bot. It's nice to meet you!
+    </template>
+</category>
+
+<category>
+    <pattern>How are you?</pattern>
+    <template>
+        I'm doing well, thank you! How about you?
+    </template>
+</category>
+
+<category>
+    <pattern>Goodbye</pattern>
+    <template>
+        Goodbye! Have a great day!
+    </template>
+</category>
+
+<category>
+    <pattern>HAPPY</pattern>
+    <template>
+        <random>
+            <li>Happiness is a state of mind.</li>
+            <li>Being happy is a choice.</li>
+            <li>Happiness comes from within.</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>FRIEND</pattern>
+    <template>
+        Friends are important in life.
+    </template>
+</category>
+
+<category>
+    <pattern>_ FRIEND </pattern>
+    <template>
+        <srai> FRIEND </srai>
+    </template>
+</category>
+
+<category>
+    <pattern> FRIEND *</pattern>
+    <template>
+        <srai> FRIEND </srai>
+    </template>
+</category>
+
+<category>
+    <pattern>_ FRIEND *</pattern>
+    <template>
+        <srai> FRIEND </srai>
+    </template>
+</category>
+
+<category>
+    <pattern>WORK</pattern>
+    <template>
+        <random>
+            <li>Work is important for personal growth.</li>
+            <li>A balanced work-life is essential.</li>
+            <li>Work hard, play hard.</li>
+        </random>
+    </template>
+</category>
